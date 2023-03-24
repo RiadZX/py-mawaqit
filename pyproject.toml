@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "py-mawaqit"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Riad Zaid", email="riadzaid100@gmail.com" },
 ]
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/RiadZX/py-mawaqit/"
+"Bug Tracker" = "https://github.com/RiadZX/py-mawaqit/issues"
