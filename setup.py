@@ -11,9 +11,9 @@ setuptools.setup(
     description = "An unofficial Mawaqit wrapper for python. It scrapes the mawaqit website to get the prayer times for a given mosque.",
     long_description = long_description,
     long_description_content_type = "text/markdown",
-    url = "package URL",
+    url = "https://github.com/RiadZX/py-mawaqit/",
     project_urls = {
-        "Bug Tracker": "package issues URL",
+        "Bug Tracker": "https://github.com/RiadZX/py-mawaqit/issues",
     },
     classifiers = [
         "Programming Language :: Python :: 3",
