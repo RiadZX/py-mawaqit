@@ -5,6 +5,4 @@
     The name of the mosque is essalam-rotterdam.
 
     You will mostly interact with the Mawaqit object, found at MawaqitAPI.mawaqit.
-    
-
 """
