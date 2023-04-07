@@ -1,7 +1,3 @@
-# ChromeCast Adhan
-This python script will allow you to use your chromecast as your personal adhan at home. Download the MawaqitAPI library and run this script.
-At the bottom of the script you can initialize the mosque id, adhan url and the volumes of each prayer. You can run this on a server or a Raspberry Pi.
-```python
 from MawaqitAPI.mawaqit import Mawaqit
 from MawaqitAPI.google import ChromeCast
 from MawaqitAPI.constants import ADHAN_URL
@@ -87,4 +83,5 @@ if __name__ == "__main__":
     isha_vol = 0.4
     adhan = ADHAN_URL
     main(mosque_id, cast_name, fajr_vol, duhur_vol, asr_vol, maghrib_vol, isha_vol, adhan)
-```
+
+

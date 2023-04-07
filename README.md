@@ -1,5 +1,4 @@
 # Unofficial Mawaqit Python wrapper
-
-> https://riadzx.github.io/py-mawaqit/reference/
-## Generate docs
-> pdoc --html . --force -c sort_identifiers=False
+An unofficial Mawaqit wrapper for python. It scrapes the mawaqit website to get the prayer times for a given mosque.
+## Docs
+> https://riadzx.github.io/py-mawaqit/

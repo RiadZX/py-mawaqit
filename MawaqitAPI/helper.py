@@ -55,3 +55,8 @@ class Helper():
     def time_left(self, date_string):
         return self.get_timestamp(date_string) - self.get_current_timestamp()
     
+    def get_next_prayer(self, prayers):
+        for prayer in prayers:
+            if self.time_left(prayers[prayer]) > 0:
+                return prayer
+    

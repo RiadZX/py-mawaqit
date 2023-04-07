@@ -3,8 +3,6 @@ from MawaqitAPI.helper import Helper
 from MawaqitAPI.localMawaqit import LocalMawaqit
 
 class Mawaqit():
-
-
     def __init__(self, mosque_id, new_data=True, **kwargs):
 
         """
@@ -44,6 +42,7 @@ class Mawaqit():
         Returns:
             str: The time of the prayer.
         """
+        
         if self.new_data:
             return self.crawler.get_prayer_time(prayer)
         else:
@@ -137,6 +136,18 @@ class Mawaqit():
         """
 
         self.helper.save_data_to_file(data, self.file_name)
+
+    def get_next_prayer(self):
+
+        """
+        Returns:
+            str: The next prayer.
+        """
+
+        if self.new_data:
+            return self.helper.get_next_prayer(self.crawler.get_prayer_times())
+        else:
+            return self.helper.get_next_prayer(self.local_mawaqit.get_prayer_times())
 
     
 
