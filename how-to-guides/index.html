@@ -246,6 +246,8 @@ from MawaqitAPI.constants import ADHAN_URL
 from dateutil import parser
 import time, threading
 
+
+
 def main(mosque_id, cast_name, fajr_vol, duhur_vol, asr_vol, maghrib_vol, isha_vol, adhan):
     #set the chromecast name
     cast = ChromeCast(cast_name)
@@ -261,7 +263,7 @@ def main(mosque_id, cast_name, fajr_vol, duhur_vol, asr_vol, maghrib_vol, isha_v
     while True:
 
         #get new data at 03:00
-        if time.strftime(&quot;%H:%M&quot;) == &quot;03:00&quot; or time.strftime(&quot;%H:%M&quot;) == &quot;03:01&quot; or time.strftime(&quot;%H:%M&quot;) == &quot;02:59&quot; and time.time() - last_update &gt; 60*60:
+        if (time.strftime(&quot;%H:%M&quot;) == &quot;03:00&quot; or time.strftime(&quot;%H:%M&quot;) == &quot;03:01&quot; or time.strftime(&quot;%H:%M&quot;) == &quot;02:59&quot;) and time.time() - last_update &gt; 60*60:
             data = mawaqitAPI.get_prayer_times()
             print(data)
             last_update = time.time()
